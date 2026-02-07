@@ -628,42 +628,294 @@
   </div>
 
   <hr>
+  <h2>Практические задания</h2>
+<p>Выполняйте задания по порядку. Каждое задание проверяет определённый навык.</p>
 
-  <div class="challenge-card">
-    <h3>Практические задания</h3>
-    
-    <h4 class="mt-4">Задание 1: Базовая вёрстка</h4>
-    <ol>
-      <li>Создайте HTML-страницу с подключением Bootstrap</li>
-      <li>Создайте адаптивную сетку 3x3 (три ряда по три колонки)</li>
-      <li>Добавьте разные цвета фона для каждой колонки</li>
-      <li>Сделайте так, чтобы на мобильных устройствах колонки становились вертикальными</li>
-    </ol>
-
-    <h4>Задание 2: Компоненты</h4>
-    <ol>
-      <li>Создайте навигационную панель с логотипом и 4 ссылками</li>
-      <li>Добавьте карточку товара с изображением, названием, описанием и кнопкой "Купить"</li>
-      <li>Создайте форму обратной связи с полями: имя, email, сообщение и кнопкой отправки</li>
-      <li>Добавьте footer с контактной информацией и ссылками на соцсети</li>
-    </ol>
-
-    <h4>Задание 3: Кастомизация</h4>
-    <ol>
-      <li>Измените цветовую тему Bootstrap на свою (используйте CSS-переменные)</li>
-      <li>Добавьте hover-эффекты для всех кнопок</li>
-      <li>Создайте анимацию появления элементов при прокрутке</li>
-      <li>Сделайте тёмную тему для сайта</li>
-    </ol>
-
-    <h4>Задание 4: Проект "Портфолио"</h4>
-    <ol>
-      <li>Создайте одностраничный сайт-портфолио</li>
-      <li>Включите секции: герой-блок, о себе, проекты, навыки, контакты</li>
-      <li>Используйте Bootstrap Grid для вёрстки</li>
-      <li>Добавьте адаптивность и интерактивность</li>
-    </ol>
+<!-- ЗАДАНИЕ 1 -->
+<div class="task-card easy">
+  <h3><span class="task-number">1</span> Создайте простую кнопку</h3>
+  <p><strong>Задача:</strong> Создайте кнопку с текстом "Нажми меня" используя классы Bootstrap.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Используйте класс <code>btn</code> и один из классов цветов: <code>btn-primary</code>, <code>btn-success</code>, <code>btn-warning</code>
   </div>
+  
+  <div class="example-box">
+    <p>Ваш результат должен выглядеть примерно так:</p>
+    <button class="btn btn-primary">Нажми меня</button>
+  </div>
+  
+  <div class="code-block">
+    &lt;button class="<span class="text-warning">ЗАПОЛНИТЕ КЛАССЫ</span>"&gt;Нажми меня&lt;/button&gt;
+  </div>
+</div>
+
+<!-- ЗАДАНИЕ 2 -->
+<div class="task-card easy">
+  <h3><span class="task-number">2</span> Создайте заголовок и абзац</h3>
+  <p><strong>Задача:</strong> Создайте заголовок второго уровня и абзац текста под ним.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Используйте теги <code>&lt;h2&gt;</code> для заголовка и <code>&lt;p&gt;</code> для абзаца
+  </div>
+  
+  <div class="example-box">
+    <p>Пример того, что нужно получить:</p>
+    <h4 style="color: #2c3e50;">Мой первый сайт</h4>
+    <p>Это мой первый сайт, созданный с помощью Bootstrap и CSS.</p>
+  </div>
+  
+  <div class="code-block">
+    &lt;h2&gt;<span class="text-warning">ВАШ ЗАГОЛОВОК</span>&lt;/h2&gt;<br>
+    &lt;p&gt;<span class="text-warning">ВАШ ТЕКСТ ЗДЕСЬ</span>&lt;/p&gt;
+  </div>
+</div>
+
+<!-- ЗАДАНИЕ 3 -->
+<div class="task-card easy">
+  <h3><span class="task-number">3</span> Измените цвет текста</h3>
+  <p><strong>Задача:</strong> Сделайте текст красного цвета с помощью CSS.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Можно использовать Bootstrap класс <code>text-danger</code> или CSS свойство <code>style="color: red;"</code>
+  </div>
+  
+  <div class="example-box">
+    <p style="color: red;">Этот текст красного цвета</p>
+  </div>
+  
+  <div class="code-block">
+    &lt;p <span class="text-warning">ДОБАВЬТЕ СТИЛЬ ИЛИ КЛАСС</span>&gt;Этот текст красного цвета&lt;/p&gt;
+  </div>
+</div>
+
+<!-- ЗАДАНИЕ 4 -->
+<div class="task-card medium">
+  <h3><span class="task-number">4</span> Создайте сетку из двух колонок</h3>
+  <p><strong>Задача:</strong> Используя Bootstrap Grid, создайте две колонки равной ширины.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Используйте классы <code>row</code> для строки и <code>col</code> для колонок
+  </div>
+  
+  <div class="example-box">
+    <div class="row">
+      <div class="col" style="background: #3498db; color: white; padding: 10px; margin: 5px; border-radius: 5px;">
+        Левая колонка
+      </div>
+      <div class="col" style="background: #2ecc71; color: white; padding: 10px; margin: 5px; border-radius: 5px;">
+        Правая колонка
+      </div>
+    </div>
+  </div>
+  
+  <div class="code-block">
+    &lt;div class="row"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="text-warning">ДОБАВЬТЕ КЛАСС КОЛОНКИ</span>"&gt;Левая колонка&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="text-warning">ДОБАВЬТЕ КЛАСС КОЛОНКИ</span>"&gt;Правая колонка&lt;/div&gt;<br>
+    &lt;/div&gt;
+  </div>
+</div>
+
+<!-- ЗАДАНИЕ 5 -->
+<div class="task-card easy">
+  <h3><span class="task-number">5</span> Добавьте отступы (padding)</h3>
+  <p><strong>Задача:</strong> Создайте элемент с внутренними отступами со всех сторон.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Используйте Bootstrap классы <code>p-3</code> (padding) или CSS свойство <code>padding: 20px;</code>
+  </div>
+  
+  <div class="example-box">
+    <div style="padding: 20px; background: #ecf0f1; border-radius: 5px;">
+      Этот блок имеет отступы со всех сторон
+    </div>
+  </div>
+  
+  <div class="code-block">
+    &lt;div <span class="text-warning">ДОБАВЬТЕ СТИЛЬ ИЛИ КЛАСС ДЛЯ ОТСТУПОВ</span>&gt;<br>
+    &nbsp;&nbsp;Этот блок имеет отступы со всех сторон<br>
+    &lt;/div&gt;
+  </div>
+</div>
+
+<!-- ЗАДАНИЕ 6 -->
+<div class="task-card easy">
+  <h3><span class="task-number">6</span> Создайте карточку (Card)</h3>
+  <p><strong>Задача:</strong> Используя компонент Bootstrap Card, создайте карточку с заголовком и текстом.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Используйте классы <code>card</code>, <code>card-body</code>, <code>card-title</code>, <code>card-text</code>
+  </div>
+  
+  <div class="example-box">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Заголовок карточки</h5>
+        <p class="card-text">Текст внутри карточки. Это может быть описание товара, услуги или просто информация.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="code-block">
+    &lt;div class="card"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="card-body"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="<span class="text-warning">ДОБАВЬТЕ КЛАСС ДЛЯ ЗАГОЛОВКА</span>"&gt;Заголовок карточки&lt;/h5&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="<span class="text-warning">ДОБАВЬТЕ КЛАСС ДЛЯ ТЕКСТА</span>"&gt;Текст внутри карточки&lt;/p&gt;<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
+    &lt;/div&gt;
+  </div>
+</div>
+
+<!-- ЗАДАНИЕ 7 -->
+<div class="task-card medium">
+  <h3><span class="task-number">7</span> Создайте список</h3>
+  <p><strong>Задача:</strong> Создайте маркированный список с 3 элементами.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Используйте теги <code>&lt;ul&gt;</code> для списка и <code>&lt;li&gt;</code> для элементов
+  </div>
+  
+  <div class="example-box">
+    <ul>
+      <li>Первый пункт списка</li>
+      <li>Второй пункт списка</li>
+      <li>Третий пункт списка</li>
+    </ul>
+  </div>
+  
+  <div class="code-block">
+    &lt;ul&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;<span class="text-warning">ПЕРВЫЙ ПУНКТ</span>&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;<span class="text-warning">ВТОРОЙ ПУНКТ</span>&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;<span class="text-warning">ТРЕТИЙ ПУНКТ</span>&lt;/li&gt;<br>
+    &lt;/ul&gt;
+  </div>
+</div>
+
+<!-- ЗАДАНИЕ 8 -->
+<div class="task-card easy">
+  <h3><span class="task-number">8</span> Добавьте фоновый цвет</h3>
+  <p><strong>Задача:</strong> Создайте блок с светло-серым фоновым цветом.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Используйте Bootstrap класс <code>bg-light</code> или CSS свойство <code>style="background-color: #f8f9fa;"</code>
+  </div>
+  
+  <div class="example-box">
+    <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px;">
+      Этот блок имеет светло-серый фон
+    </div>
+  </div>
+  
+  <div class="code-block">
+    &lt;div <span class="text-warning">ДОБАВЬТЕ СТИЛЬ ИЛИ КЛАСС ДЛЯ ФОНА</span>&gt;<br>
+    &nbsp;&nbsp;Этот блок имеет светло-серый фон<br>
+    &lt;/div&gt;
+  </div>
+</div>
+
+<!-- ЗАДАНИЕ 9 -->
+<div class="task-card medium">
+  <h3><span class="task-number">9</span> Создайте ссылку</h3>
+  <p><strong>Задача:</strong> Создайте ссылку, которая открывается в новой вкладке.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Используйте атрибут <code>target="_blank"</code> для открытия в новой вкладке
+  </div>
+  
+  <div class="example-box">
+    <a href="https://google.com" target="_blank" class="btn btn-outline-primary">
+      Перейти на Google
+    </a>
+  </div>
+  
+  <div class="code-block">
+    &lt;a href="https://google.com" <span class="text-warning">ДОБАВЬТЕ АТРИБУТ ДЛЯ НОВОЙ ВКЛАДКИ</span> class="btn btn-outline-primary"&gt;<br>
+    &nbsp;&nbsp;Перейти на Google<br>
+    &lt;/a&gt;
+  </div>
+</div>
+
+<!-- ЗАДАНИЕ 10 -->
+<div class="task-card medium">
+  <h3><span class="task-number">10</span> Создайте адаптивную сетку</h3>
+  <p><strong>Задача:</strong> Создайте 3 колонки, которые на мобильных устройствах становятся одной колонкой.</p>
+  
+  <div class="hint">
+    <strong>Подсказка:</strong> Используйте класс <code>col-md-4</code> для каждой колонки
+  </div>
+  
+  <div class="example-box">
+    <div class="row">
+      <div class="col-md-4" style="background: #3498db; color: white; padding: 10px; margin: 5px 0; border-radius: 5px;">
+        Колонка 1
+      </div>
+      <div class="col-md-4" style="background: #e74c3c; color: white; padding: 10px; margin: 5px 0; border-radius: 5px;">
+        Колонка 2
+      </div>
+      <div class="col-md-4" style="background: #2ecc71; color: white; padding: 10px; margin: 5px 0; border-radius: 5px;">
+        Колонка 3
+      </div>
+    </div>
+    <small class="text-muted">На узком экране колонки станут вертикальными</small>
+  </div>
+  
+  <div class="code-block">
+    &lt;div class="row"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="text-warning">ДОБАВЬТЕ КЛАСС ДЛЯ АДАПТИВНОЙ КОЛОНКИ</span>"&gt;Колонка 1&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="text-warning">ДОБАВЬТЕ КЛАСС ДЛЯ АДАПТИВНОЙ КОЛОНКИ</span>"&gt;Колонка 2&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="text-warning">ДОБАВЬТЕ КЛАСС ДЛЯ АДАПТИВНОЙ КОЛОНКИ</span>"&gt;Колонка 3&lt;/div&gt;<br>
+    &lt;/div&gt;
+  </div>
+</div>
+<hr>
+
+<h2>Практическая работа: Создайте простую страницу</h2>
+<p>Соберите все изученные элементы в одну страницу:</p>
+
+<div class="demo-area">
+  <p>Создайте HTML-файл и добавьте в него:</p>
+  <ol>
+    <li>Заголовок страницы (h1)</li>
+    <li>Навигацию с 3 ссылками (можно использовать Bootstrap Nav)</li>
+    <li>Две колонки с контентом</li>
+    <li>Карточку с информацией</li>
+    <li>Кнопку внизу страницы</li>
+    <li>Футер с вашим именем и годом</li>
+  </ol>
+</div>
+
+<div class="hint">
+  <strong>Пример структуры:</strong>
+  <div class="code-block">
+    &lt;!DOCTYPE html&gt;<br>
+    &lt;html lang="ru"&gt;<br>
+    &lt;head&gt;<br>
+    &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+    &nbsp;&nbsp;&lt;title&gt;Моя первая страница&lt;/title&gt;<br>
+    &nbsp;&nbsp;&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;<br>
+    &lt;/head&gt;<br>
+    &lt;body&gt;<br>
+    &nbsp;&nbsp;&lt;!-- Ваша вёрстка здесь --&gt;<br>
+    &lt;/body&gt;<br>
+    &lt;/html&gt;
+  </div>
+</div>
+
+<hr>
+
+<h2>Проверка знаний</h2>
+<div class="task-card">
+  <p><strong>Проверьте себя:</strong> Вы должны уметь объяснить:</p>
+  <ul>
+    <li>Что такое класс в CSS и как его добавить к элементу?</li>
+    <li>Как создать кнопку в Bootstrap?</li>
+    <li>Чем отличается класс <code>col</code> от <code>col-md-4</code>?</li>
+    <li>Как добавить отступы элементу?</li>
+    <li>Что делает атрибут <code>target="_blank"</code>?</li>
+  </ul>
+  
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
